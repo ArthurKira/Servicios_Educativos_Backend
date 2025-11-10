@@ -12,6 +12,15 @@ module.exports = (sequelize, DataTypes) => {
             unique: true,
             field: 'codigo_modular'
         },
+        tipo_servicio_educativo: {
+            type: DataTypes.STRING(50),
+            allowNull: false,
+            field: 'tipo_servicio_educativo'
+        },
+        tipo_programa: {
+            type: DataTypes.STRING(50),
+            field: 'tipo_programa'
+        },
         nombre_servicio: {
             type: DataTypes.STRING(255),
             allowNull: false,
@@ -20,6 +29,26 @@ module.exports = (sequelize, DataTypes) => {
         fecha_inicio_funciones: {
             type: DataTypes.DATEONLY,
             field: 'fecha_inicio_funciones'
+        },
+        ubigeo: {
+            type: DataTypes.STRING(6),
+            field: 'ubigeo'
+        },
+        cod_ooii: {
+            type: DataTypes.STRING(6),
+            field: 'cod_ooii'
+        },
+        latitud: {
+            type: DataTypes.DECIMAL(10, 8),
+            field: 'latitud'
+        },
+        longitud: {
+            type: DataTypes.DECIMAL(11, 8),
+            field: 'longitud'
+        },
+        direccion: {
+            type: DataTypes.STRING(250),
+            field: 'direccion'
         },
         turno: {
             type: DataTypes.STRING(50),

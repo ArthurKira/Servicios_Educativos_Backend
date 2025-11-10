@@ -41,7 +41,7 @@ module.exports = (sequelize, DataTypes) => {
             field: 'distrito'
         },
         ubigeo: {
-            type: DataTypes.STRING(10),
+            type: DataTypes.STRING(6),
             field: 'ubigeo'
         },
         direccion: {

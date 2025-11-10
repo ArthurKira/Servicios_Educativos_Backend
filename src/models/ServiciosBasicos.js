@@ -24,9 +24,13 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING(100),
             field: 'proveedor'
         },
-        fecha_ultimo_mantenimiento: {
+        fecha_inicio_convenio: {
             type: DataTypes.DATEONLY,
-            field: 'fecha_ultimo_mantenimiento'
+            field: 'fecha_inicio_convenio'
+        },
+        fecha_fin_convenio: {
+            type: DataTypes.DATEONLY,
+            field: 'fecha_fin_convenio'
         },
         created_at: {
             type: DataTypes.DATE,

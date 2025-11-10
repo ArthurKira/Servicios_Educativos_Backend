@@ -27,13 +27,9 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             field: 'ruc'
         },
-        codigo_dre: {
-            type: DataTypes.STRING(50),
-            field: 'codigo_dre'
-        },
-        codigo_ugel: {
-            type: DataTypes.STRING(50),
-            field: 'codigo_ugel'
+        cod_ooii: {
+            type: DataTypes.STRING(6),
+            field: 'cod_ooii'
         },
         tipo_institucion: {
             type: DataTypes.STRING(100),
